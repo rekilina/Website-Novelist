@@ -1,0 +1,153 @@
+
+@import "fonts";
+$milk: #fffbf5;
+$darkbroun: #554338;
+$lightbrown: #8a663f;
+$black: #000000;
+$bluegrey: #9db7be;
+$md: 768px;
+$sm: 576px;
+$oldstandart: 'Old Standard TT', serif;
+$opensans: 'Open Sans', sans-serif;
+$bogart: 'Bogart', serif;
+$time-link: .5s;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.h3 {
+    margin-bottom: 0;
+}
+html {
+    overflow-x: clip;
+}
+body {
+    pointer-events: all;
+    background-color: $milk;
+    overflow-x: clip;
+    margin: 0 auto;
+    font-family: $bogart;    
+}
+body.stop-scrolling {
+    overflow: auto;
+}
+.container {
+    padding: 80px;
+    @media (max-width: 1200px) {
+        padding: 60px;
+    }
+    @media (max-width: 800px) {
+        padding: 40px;
+        padding-bottom: 60px;
+    }
+    max-width: 1536px;
+}
+@mixin background-image-rule {
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.link {
+    text-decoration: none;
+    color: $darkbroun;
+    display: inline-block;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $darkbroun;
+      transform: scale(0);
+      display: block;
+      transition: $time-link;
+      margin-top: 1px;
+      transform-origin: left;
+    }
+    &:hover {
+      &::after {
+        transform: scale(1);
+        transition: $time-link;
+      }
+    }
+}
+.header {
+    position: fixed;
+    top: 0;
+    font-family: $opensans;
+    background-color: $milk;
+    width: 100%;
+    font-size: 18px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+        width: 100%;
+        max-width: 1536px;
+    }
+    &__nav {
+        width: 80%;
+        &-mainlist {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex: 0 0 100%;
+        }        
+        &-link {
+            text-decoration: none;
+            color: $darkbroun;
+            display: inline-block;
+            &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $darkbroun;
+            transform: scale(0);
+            display: block;
+            transition: $time-link;
+            margin-top: 1px;
+            transform-origin: left;
+            }
+            &:hover {
+                &::after {
+                  transform: scale(1);
+                  transition: $time-link;
+                }
+            }
+            &.inview {
+                &::after {
+                    transform: scale(1);
+                    transition: $time-link;
+                  }
+            }
+        }
+        &-other {
+            position: relative;
+        }
+        &-otherlist {
+            position: absolute;
+            top: 3em;
+            height: 0;
+            visibility: hidden;
+        }
+    }
+    &__card {
+        width: 1em;
+        height: 1em;
+        position: relative;
+        &-img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: -10px;
+            right: 0;
+        }
+    }
+}
