@@ -31,6 +31,11 @@ export function dropdownOther() {
     })
 }
 
+export function dropdownMenu() {
+    $(".burger__btn").toggleClass("opened");
+    $(".header__burger .header__nav-mainlist").toggleClass("visible");
+}
+
 // link is DOM Element not jq object
 function fromMaintoOther(link) {
     if ($(link).parent().parent().hasClass('header__nav-mainlist')) {
