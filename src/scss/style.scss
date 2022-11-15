@@ -542,6 +542,12 @@ body.stop-scrolling {
             text-transform: uppercase;
             font-size: 20px;
             min-height: calc(3*27px);
+            @media(max-width: $d1200) {
+                font-size: 17px;
+            }
+            @media(max-width: $d900) {
+                font-size: 20px;
+            }
             @media(max-width: $d500) {
                 min-height: inherit;
                 text-align: center;
@@ -553,6 +559,11 @@ body.stop-scrolling {
             font-family: $oldstandart;
             font-size: 18px;
             text-align: justify;
+            line-height: 1.3;
+            @media(max-width: $d900) {
+                font-size: 20px;
+                line-height: 1.5;
+            }
             @media(max-width: $d500) {
                 font-size: 14px;
             }
