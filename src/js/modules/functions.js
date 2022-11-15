@@ -77,5 +77,17 @@ export async function moveLiHeader() {
             }
         }
     }
-    
+    if (ww < 700) {
+        for (let link of allNavLinks) {
+            if (link.textContent.trim() == 'Книги') {
+                fromMaintoOther(link);
+            }
+        }
+    } else {
+        for (let link of allNavLinks) {
+            if (link.textContent.trim() == 'Книги') {
+                fromOthertoMain(link);
+            }
+        }
+    }
 }

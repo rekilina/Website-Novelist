@@ -11,6 +11,12 @@ $oldstandart: 'Old Standard TT', serif;
 $opensans: 'Open Sans', sans-serif;
 $bogart: 'Bogart', serif;
 $time-link: .5s;
+$d1200: 1200px;
+$d900: 900px;
+$d770: 770px;
+$d600: 600px;
+$d450: 450px;
+$d350: 350px;
 :root {
     --otherlist-lineheight: 2em;
     --otherlist-height: 4em;
@@ -95,6 +101,9 @@ body.stop-scrolling {
         width: 100%;
         max-width: 1536px;
         margin: 0 auto;
+        @media(max-width: $d900) {
+            padding: 20px 40px;
+        }
     }
     &__nav {
         width: 80%;
