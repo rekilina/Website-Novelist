@@ -605,11 +605,12 @@ body.stop-scrolling {
         flex-direction: column;
         align-items: center;
         &-wrapper{
-            // height: 150px;
-            // width: inherit;
             width: 25%;
+            transform: scale(1);
+            transition: $time-link;
             &:hover {
                 cursor: pointer;
+                transform: scale(1.1);
             }
             @media(max-width: $d660) {
                 width: 30%;
@@ -628,22 +629,17 @@ body.stop-scrolling {
             padding: 0;
             width: 100%;
             padding-bottom: 156%;
-            // height: 100%;
-            // padding-left: 33%;
-            // width: 0;
             position: relative;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             margin: 0 auto;
+            
         }
         &-img {
             width: 100%;
-            // height: 100%;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            // left: 50%;
-            // transform: translateX(-50%);
         }
         &-title {
             font-family: $oldstandart;
