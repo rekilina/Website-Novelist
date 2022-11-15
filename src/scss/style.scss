@@ -11,7 +11,10 @@ $oldstandart: 'Old Standard TT', serif;
 $opensans: 'Open Sans', sans-serif;
 $bogart: 'Bogart', serif;
 $time-link: .5s;
-
+:root {
+    --otherlist-lineheight: 2em;
+    --otherlist-height: 4em;
+}
 * {
     padding: 0;
     margin: 0;
@@ -60,23 +63,23 @@ body.stop-scrolling {
     text-decoration: none;
     color: $darkbroun;
     display: inline-block;
-    &::after {
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: $darkbroun;
-      transform: scale(0);
-      display: block;
-      transition: $time-link;
-      margin-top: 1px;
-      transform-origin: left;
-    }
-    &:hover {
-      &::after {
-        transform: scale(1);
-        transition: $time-link;
-      }
-    }
+    // &::after {
+    //   content: '';
+    //   width: 100%;
+    //   height: 1px;
+    //   background-color: $darkbroun;
+    //   transform: scale(0);
+    //   display: block;
+    //   transition: $time-link;
+    //   margin-top: 1px;
+    //   transform-origin: left;
+    // }
+    // &:hover {
+    //   &::after {
+    //     transform: scale(1);
+    //     transition: $time-link;
+    //   }
+    // }
 }
 .header {
     position: fixed;
@@ -91,6 +94,7 @@ body.stop-scrolling {
         padding: 20px 80px;
         width: 100%;
         max-width: 1536px;
+        margin: 0 auto;
     }
     &__nav {
         width: 80%;
@@ -128,14 +132,22 @@ body.stop-scrolling {
                   }
             }
         }
-        &-other {
-            position: relative;
-        }
         &-otherlist {
-            position: absolute;
+            position: fixed;
             top: 3em;
             height: 0;
-            visibility: hidden;
+            overflow: hidden;
+            transition: height $time-link ease;
+            line-height: var(--otherlist-lineheight);
+            background-color: $milk;
+            &.visible {
+                height: var(--otherlist-height);
+            }
+            & .header__nav-link {
+                &::after {
+                    margin-top: -.3em;
+                }
+            }
         }
     }
     &__card {
