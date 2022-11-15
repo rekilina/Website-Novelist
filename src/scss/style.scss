@@ -1,5 +1,6 @@
 
 @import "fonts";
+$white: #ffffff;
 $milk: #fffbf5;
 $darkbroun: #554338;
 $lightbrown: #8a663f;
@@ -12,10 +13,11 @@ $opensans: 'Open Sans', sans-serif;
 $bogart: 'Bogart', serif;
 $time-link: .5s;
 $d1200: 1200px;
+$d1000: 1000px;
 $d900: 900px;
 $d770: 770px;
-$d600: 600px;
-$d450: 450px;
+$d660: 660px;
+$d500: 500px;
 $d350: 350px;
 :root {
     --otherlist-lineheight: 2em;
@@ -32,9 +34,6 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
-.h3 {
-    margin-bottom: 0;
-}
 html {
     overflow-x: clip;
 }
@@ -49,13 +48,12 @@ body.stop-scrolling {
     overflow: auto;
 }
 .container {
-    padding: 80px;
-    @media (max-width: 1200px) {
-        padding: 60px;
+    padding: 20px 80px;
+    @media (max-width: $d1200) {
+        padding: 20px 60px;
     }
-    @media (max-width: 800px) {
-        padding: 40px;
-        padding-bottom: 60px;
+    @media (max-width: $d900) {
+        padding: 20px 40px;
     }
     max-width: 1536px;
 }
@@ -89,9 +87,10 @@ body.stop-scrolling {
 }
 .header {
     position: fixed;
+    z-index: 9999;
     top: 0;
     font-family: $opensans;
-    background-color: $milk;
+    background-color: rgba($milk, .8);
     width: 100%;
     font-size: 18px;
     &__container {
@@ -148,7 +147,7 @@ body.stop-scrolling {
             overflow: hidden;
             transition: height $time-link ease;
             line-height: var(--otherlist-lineheight);
-            background-color: $milk;
+            background-color: rgba($milk, .8);
             &.visible {
                 height: var(--otherlist-height);
             }
@@ -170,5 +169,127 @@ body.stop-scrolling {
             top: -10px;
             right: 0;
         }
+    }
+}
+.main {
+    padding-top: 80px;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        @media(max-width: $d660) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+        @media(max-width: $d770) {
+            width: 90%;
+        }
+        @media(max-width: $d660) {
+            width: 60%;
+        }
+        @media(max-width: $d500) {
+            width: 90%;
+        }
+    }
+    &__photo {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0;
+        padding-bottom: 110%;
+        height: 0;
+        position: relative;
+        &-img {
+            position: absolute;
+            bottom: 50%;
+            transform: translateY(50%);
+            width: 100%;
+        }
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 30px;
+        &-img {
+            width: 100%;
+        }
+        @media(max-width: $d900) {
+            width: 100px;
+        }
+        @media(max-width: $d770) {
+            width: 90px;
+        }
+        @media(max-width: $d770) {
+            width: 120px;
+        }
+    }
+    &__h1 {
+        font-family: $oldstandart;
+        color: $lightbrown;
+        font-size: 62px;
+        font-weight: 300;
+        @media (max-width: $d1000) {
+            font-size: 48px;
+        }
+        @media (max-width: $d770) {
+            font-size: 42px;
+        }
+        @media (max-width: $d660) {
+            font-size: 48px;
+        }
+        @media (max-width: $d500) {
+            font-size: 42px;
+        }
+    }
+    &__social {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        margin-top: 40px;
+        @media(max-width: $d1200) {
+            width: 80%;
+        }
+        @media(max-width: $d900) {
+            width: 100%;
+        }
+        @media(max-width: $d660) {
+            width: 60%;
+        }
+        @media(max-width: $d500) {
+            width: 90%;
+        }
+        &-link {
+            width: 50px;
+            height: auto;
+            display: inline-block;
+        }
+        &-img {
+            width: 100%;
+        }
+    }
+}
+.h3 {
+    font-size: 20px;
+    font-family: $bogart;
+    margin-bottom: 0;
+    @media (max-width: $d1000) {
+        font-size: 16px;
     }
 }
