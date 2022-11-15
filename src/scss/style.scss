@@ -49,12 +49,12 @@ body.stop-scrolling {
     overflow: auto;
 }
 .container {
-    padding: 20px 80px;
+    padding: 40px 80px;
     @media (max-width: $d1200) {
-        padding: 20px 60px;
+        padding: 40px 60px;
     }
     @media (max-width: $d900) {
-        padding: 20px 40px;
+        padding: 40px 40px;
     }
     @media (max-width: $d660) {
         padding: 20px 20px;
@@ -247,27 +247,6 @@ body.stop-scrolling {
             width: 120px;
         }
     }
-    &__h1 {
-        font-family: $oldstandart;
-        color: $lightbrown;
-        font-size: 62px;
-        font-weight: 300;
-        @media (max-width: $d1000) {
-            font-size: 48px;
-        }
-        @media (max-width: $d770) {
-            font-size: 42px;
-        }
-        @media (max-width: $d660) {
-            font-size: 48px;
-        }
-        @media (max-width: $d500) {
-            font-size: 42px;
-        }
-        @media (max-width: $d350) {
-            font-size: 36px;
-        }
-    }
     &__social {
         display: flex;
         width: 60%;
@@ -315,7 +294,9 @@ body.stop-scrolling {
 .h3 {
     font-size: 20px;
     font-family: $bogart;
+    font-weight: 300;
     margin-bottom: 0;
+    text-align: center;
     @media (max-width: $d1000) {
         font-size: 18px;
     }
@@ -407,5 +388,83 @@ body.stop-scrolling {
             }
         }
         
+    }
+}
+.h1 {
+    font-family: $oldstandart;
+    color: $lightbrown;
+    font-size: 62px;
+    font-weight: 300;
+    @media (max-width: $d1000) {
+        font-size: 48px;
+    }
+    @media (max-width: $d770) {
+        font-size: 42px;
+    }
+    @media (max-width: $d660) {
+        font-size: 48px;
+    }
+    @media (max-width: $d500) {
+        font-size: 42px;
+    }
+    @media (max-width: $d350) {
+        font-size: 36px;
+    }
+}
+.h1__decor {
+    width: 50vw;
+    height: 3px;
+    background-color: $bluegrey;
+    justify-content: flex-start;
+}
+.h2 {
+    margin-top: .5em;
+    font-family: $oldstandart;
+    color: $darkbroun;
+    font-size: 28px;
+    text-align: center;
+    @media(max-width: $d900) {
+        font-size: 20px;
+    }
+    @media(max-width: $d660) {
+        font-size: 24px;
+    }
+}
+.bio {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-family: $oldstandart;
+    }
+    &__subtitle {
+        font-size: 18px;
+        margin-bottom: 1em;
+        font-family: $bogart;
+        font-weight: 400;
+    }
+    &__grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 2fr 1fr;
+        @media(max-width: $d660) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__text {
+        font-family: $bogart;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        &-p {
+            margin-bottom: 1em;
+        }
+        &-footer {
+            text-align: right;
+        }
     }
 }
