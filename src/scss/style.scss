@@ -210,7 +210,7 @@ body.stop-scrolling {
         margin: 0 auto;
         box-sizing: border-box;
         padding: 0;
-        padding-bottom: 110%;
+        padding-bottom: 113%;
         height: 0;
         position: relative;
         &-img {
@@ -283,6 +283,13 @@ body.stop-scrolling {
             width: 50px;
             height: auto;
             display: inline-block;
+            & .svg_animate {
+                transform: scale(1);
+                transition: $time-link;
+            }
+            &:hover .svg_animate {
+                transform: scale(1.1);
+            }
         }
         &-img {
             width: 100%;
@@ -294,7 +301,13 @@ body.stop-scrolling {
     font-family: $bogart;
     margin-bottom: 0;
     @media (max-width: $d1000) {
+        font-size: 18px;
+    }
+    @media (max-width: $d770) {
         font-size: 16px;
+    }
+    @media (max-width: $d660) {
+        font-size: 20px;
     }
 }
 .burger__btn {
