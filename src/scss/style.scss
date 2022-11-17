@@ -595,6 +595,11 @@ body.stop-scrolling {
     }
 }
 .books {
+    &__hide {
+        @media(max-width:$d1200) {
+            display: none;
+        }
+    }
     &__grid {
         display: grid;
         margin-top: 50px;
