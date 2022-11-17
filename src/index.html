@@ -171,7 +171,6 @@
                     </div>
                 </div>
                 <a class="books__go books__item-btn" href="#">
-                    <!-- <img src="@img/loading.svg" alt="" class="books__go-img"> -->
                     <span class="books__go-text">все новости &#8594</span>
                 </a>
             </div>
@@ -196,7 +195,7 @@
                         </div>
                     </a>
                     <a class="books__item-title link">ТЕРРИТОРИЯ ЧУВСТВ</a>
-                    <p class="books__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p class="books__item-text">Кирилл Кольцов – врач, увлеченный новаторским делом: уже много лет он занимается ЭКО, делая людей счастливыми.</p>
                     <button type="button" class="books__item-btn">в корзину</button>
                 </div>
                 <div class="books__item">
@@ -330,6 +329,24 @@
                     <h1 class="h1">Интервью</h1>
                     <div class="h1__decor"></div>
                 </div>
+                <div class="interview__grid">
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="https://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="https://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="https://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="https://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <a class="books__go books__item-btn" href="#">
+                    <!-- <img src="@img/loading.svg" alt="" class="books__go-img"> -->
+                    <span class="books__go-text">все интервью &#8594</span>
+                </a>
             </div>
         </section>
         <section class="souvenirs" id="souvenirs">
@@ -338,16 +355,43 @@
                     <h1 class="h1">Суверниры</h1>
                     <div class="h1__decor"></div>
                 </div>
+                <div class="souvenirs__grid">
+                    <div class="souvenirs__item">
+                        <div class="souvenirs__item-wrapper">
+                            <div class="souvenirs__item-cover">
+                                <img src="@img/bag_preview.png" alt="bag" class="souvenirs__item-img">
+                            </div>
+                        </div>
+                        <div class="souvenirs__item-title">Городская сумка</div>
+                        <div class="souvenirs__item-text">
+                            <p>Удобная городская сумка из холста с логотипом автора.</p>
+                            <p>Размеры сумки: ширина&nbsp;41&nbsp;см, высота&nbsp;44&nbsp;см, высота&nbsp;ручек&nbsp;33&nbsp;см</p>
+                        </div>
+                        <div class="souvenirs__item-price"></div>
+                        <div class="souvenirs__item-footer">
+                            <div class="counter">
+                                <div class="counter__btn counter__minus counter__minus-0">
+                                    <img src="@img/minus.svg" alt="minus" class="counter__btn-img">
+                                </div>
+                                <input type="text" value="0" class="counter__input">
+                                <div class="counter__btn counter__plus">
+                                    <img src="@img/plus.svg" alt="plus" class="counter__btn-img">
+                                </div>
+                            </div>
+                            <button class="to__card books__item-btn">в корзину</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="meetings" id="meetings">
+        <!-- <section class="meetings" id="meetings">
             <div class="container">
                 <div class="meetings__title">
                     <h1 class="h1">Московские посиделки</h1>
                     <div class="h1__decor"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     @@include('html/footer.html', {})
     <script src="@js/jquery.js" type="module"></script>
