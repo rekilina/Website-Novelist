@@ -41,13 +41,15 @@ body {
     background-color: $milk;
     overflow-x: clip;
     margin: 0 auto;
-    font-family: $bogart;    
+    font-family: $oldstandart;    
+    margin: 0 auto;
 }
 body.stop-scrolling {
     overflow: auto;
 }
 .container {
     padding: 40px 80px;
+    margin: 0 auto;
     @media (max-width: $d1200) {
         padding: 40px 60px;
     }
@@ -681,5 +683,103 @@ body.stop-scrolling {
             }
         }
     }
+    &__go {
+        margin: 50px auto 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+        &-img {
+            width: 1.3em;
+            margin-right: .5em;
+        }
+    }
+
     
+}
+.reviews {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        @media (max-width: $d900) {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media (max-width: $d500) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__item {
+        max-width: 100%;
+        @media(max-width: $d900) {
+            max-width: 40%;
+        }
+        @media(max-width: $d500) {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 10px;
+        }
+        &-wrapper{
+            width: 100%;
+            margin: 0 auto;
+        }
+        &-cover {
+            overflow: hidden;
+            -webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+            box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+            width: 100%;
+            padding-bottom: 74%;
+            position: relative;
+        }
+        &-img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-title {
+            font-family: $oldstandart;
+            font-size: 24px;
+            margin: 10px 0;
+            @media(max-width: $d1000) {
+                font-size: 20px;
+            }
+            @media(max-width: $d660) {
+                font-size: 14px;
+            }
+            @media(max-width: $d500) {
+                font-size: 16px;
+                min-height: inherit;
+                margin: 0;
+            }
+        }
+        &-date {
+            font-family: $opensans;
+            font-size: 16px;
+            margin-bottom: 0.3em;
+        }
+        &-text {
+            font-family: $bogart;
+            font-size: 16px;
+            font-weight: 300;
+            @media(max-width: $d1000) {
+                font-size: 14px;
+            }
+        }
+        &-read {
+            font-size: 16px;
+        }
+    }
 }
