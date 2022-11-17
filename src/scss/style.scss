@@ -107,6 +107,9 @@ body.stop-scrolling {
         @media(max-width: $d900) {
             padding: 20px 40px;
         }
+        @media(max-width: $d660) {
+            padding: 10px 40px;
+        }
     }
     &__nav {
         width: 80%;
@@ -175,6 +178,11 @@ body.stop-scrolling {
             position: absolute;
             top: -10px;
             right: 0;
+            @media(max-width: $d660) {
+                width: 35px;
+                height: 35px;
+                top: 0px;
+            }
         }
     }
 }
@@ -319,6 +327,15 @@ body.stop-scrolling {
     cursor: pointer;
     display: flex;
     padding: 0;
+    @media(max-width: $d660) {
+        width: 35px;
+        height: 35px;
+        & svg {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
 }
 .line {
     fill: none;
@@ -371,14 +388,15 @@ body.stop-scrolling {
         justify-content: flex-start;
         text-align: center;
         position: fixed;
-        top: 92px;
+        top: 55px;
         left: 50%;
         transform: translateX(-50%);
         height: 0;
         overflow: hidden;
         transition: height $time-link ease;
         line-height: var(--otherlist-lineheight);
-        background-color: rgba($milk, .9);
+        background-color: rgba($milk, .8);
+
         &.visible {
             height: 17em;
         }
@@ -387,7 +405,11 @@ body.stop-scrolling {
                 margin-top: -.3em;
             }
         }
-        
+    }
+    & .header__nav-link {
+        @media(max-width: $d660) {
+            font-size: 16px;
+        }
     }
 }
 .h1 {
