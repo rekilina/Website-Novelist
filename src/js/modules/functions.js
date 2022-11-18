@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2';
 
 export function iswebp() {
     // проверка поддержки webp
@@ -181,4 +181,19 @@ export function counter(e) {
           }
         }
       }
+}
+export function magnifyBag() {
+    Swal.fire({
+        title: 'Городская сумка',
+        text: 'Удобная городская сумка из холста с логотипом автора.',
+        imageUrl: '../img/bag.jpg',
+        imageWidth: 200,
+        // imageHeight: 400,
+        imageAlt: 'Custom image',
+        showClass: {
+            popup: 'animate__animated animated__fadeIn',                     // disable popup animation
+        },
+        showConfirmButton: false,
+        showCloseButton: true
+    })
 }

@@ -31,3 +31,4 @@ for (let elem of document.querySelectorAll(".header__nav-link")) {
 flsFunctions.embedDay(".news__item-day", ".news__item-date");
 document.querySelector(".counter__input").addEventListener('keypress', flsFunctions.counterValidation);
 document.addEventListener('click', flsFunctions.counter);
+$(".souvenirs__item-magnify").click(flsFunctions.magnifyBag);
