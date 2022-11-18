@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Елена Ронина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Open+Sans:wght@300&display=swap&_v=20221118141844" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.min.css?_v=20221118141844">
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container">
+        <div class="header__burger">
+            <button type="button" class="burger__btn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+            <ul class="header__nav-mainlist">
+                <li class="header__nav-li">
+                    <a href="#main" class="header__nav-link">
+                        Главная
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#bio" class="header__nav-link">
+                        Биография
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#news" class="header__nav-link">
+                        Новости
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#books" class="header__nav-link">
+                        Книги
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#reviews" class="header__nav-link">
+                        Рецензии
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#interview" class="header__nav-link">
+                        Интервью
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#souvenirs" class="header__nav-link">
+                        Сувениры
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#meetings" class="header__nav-link">
+                        Московские посиделки
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-mainlist">
+                <li class="header__nav-li">
+                    <a href="#main" class="header__nav-link">
+                        Главная
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#bio" class="header__nav-link">
+                        Биография
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#news" class="header__nav-link">
+                        Новости
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#books" class="header__nav-link">
+                        Книги
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#reviews" class="header__nav-link">
+                        Рецензии
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#interview" class="header__nav-link">
+                        Интервью
+                    </a>
+                </li>
+                <li class="header__nav-li header__nav-li-other">
+                    <a id="otherlist" class="header__nav-link">Другое&nbsp;&#8595;</a>
+                    <ul class="header__nav-otherlist">
+                        <li class="header__nav-li">
+                            <a href="#souvenirs" class="header__nav-link">
+                                Сувениры
+                            </a>
+                        </li>
+                        <!-- <li class="header__nav-li">
+                            <a href="#meetings" class="header__nav-link">
+                                Московские посиделки
+                            </a>
+                        </li> -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="header__card">
+            <img class="header__card-img" src="img/card.svg" alt="card">
+        </a>
+    </div>
+</header>
+    <main>
+       <section class="main" id="main">
+        <div class="container">
+            <div class="main__grid">
+                <div class="main__wrapper">
+                    <div class="main__photo">
+                        <img src="img/screen1.png" alt="screen1" class="main__photo-img">
+                    </div>
+                </div>                
+                <div class="main__content">
+                    <div class="logo main__logo">
+                        <img src="img/logo.png" alt="" class="main__logo-img">
+                    </div>
+                    <h1 class="main__h1 h1">Елена Ронина</h1>
+                    <h3 class="main__h3 h3">автор русской современной прозы</h3>
+                    <ul class="main__social">
+                        <li class="main__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/inst.svg" alt="inst" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                        <li class="main__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/JJ.svg" alt="JJ" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                        <li class="main__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/youtube.svg" alt="youtube" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                        <li class="main__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/mail.svg" alt="mail" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </section>
+       <section class="bio" id="bio">
+        <div class="container">
+            <div class="bio__title">
+                <h1 class="h1">Обо мне</h1>
+                <div class="h1__decor"></div>
+            </div>
+            <p class="bio__subtitle">
+                Говорят, я из тех женщин, которых принято называть self-made woman. 
+            </p>
+            <div class="bio__grid">
+                <article class="bio__text">
+                    <p class="bio__text-p">
+                        Наверное, так и есть. Я привыкла много трудиться и никогда не боялась новых и сложных задач. 
+                    </p>
+                    <p class="bio__text-p">
+                        Веду с мужем совместный бизнес, часто езжу в командировки, организовала в Москве клуб «Московские посиделки с Еленой Рониной», - прообраз салонов, некогда популярных в Москве. Но в первую очередь сама себя считаю писателем.
+                    </p>
+                    <p class="bio__text-p">
+                        Мой первый рассказ я написала для сестры — в подарок. 
+Потом как-то так вышло, что написала второй рассказ, третий… Рассказов становилось все больше, круг читателей расширялся. И — получилась книга.
+                    </p>
+                    <p class="bio__text-p">
+                        В своем творчестве я, безусловно, мешаю быль и вымысел. Иногда читатели обижаются, узнавая в героях себя. Они забывают, что все, что я делаю, — это художественная литература, а никакая не документалистика и уж конечно не чья-то биография.
+                    </p>
+                    <p class="bio__text-p">
+                        Я пишу, как только выпадает свободное время. Пишу с того места, где остановилась, не возвращаясь к написанному. Я много хочу успеть. А времени так мало…
+                    </p>
+                    <div class="bio__text-footer">
+                        <p>Читайте мои книги, додумывайте.</p>
+                        <p>И — пишите. Я обязательно отвечу.</p>
+                    </div>
+                </article>
+                <div class="bio__wrapper main__wrapper">
+                    <div class="bio__photo main__photo">
+                        <img src="img/screen2.png" alt="screen2" class="bio__photo-img main__photo-img">
+                    </div>
+                    <p class="h2">Елена Ронина</p>
+                    <p class="h3">автор русской современной&nbsp;прозы
+                    </p>
+                </div>
+            </div>  
+        </div>
+       </section>
+       <section class="news" id="news">
+            <div class="container">
+                <div class="news__title">
+                    <h1 class="h1">Новости</h1>
+                    <div class="h1__decor"></div>
+                </div>
+                <div class="news__grid">
+                    <div class="news__item">
+                        <div class="news__item-preview">
+                            <div class="news__item-datetime">
+                                <div class="news__item-date">2022-11-18</div>
+                                <div class="news__item-day">вторник</div>
+                                <div class="news__item-time">18:00</div>
+                            </div>                            
+                            <div class="news__item-wrapper">
+                                <div class="news__item-cover">
+                                    <img src="img/frontcover/terch_b.jpg" alt="" class="news__item-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__item-content">
+                            <div class="news__item-title">Новая книга "Территория чувств" Елены Рониной уже в продаже</div>
+                            <div class="news__item-text">18 лет назад Алексей потерял любимую жену и уехал с маленькими дочками подальше от места, где все они пережили страшную трагедию, — в Германию. Теперь он возвращается на родину, чтобы увидеться с сестрой и найти в полузабытой им Москве что-то очень важное. Вкус к жизни? Ощущение, что ничего еще не кончилось? <a href="#" class="link">Читать дальше...</a> </div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-preview">
+                            <div class="news__item-datetime">
+                                <div class="news__item-date">2022-07-20</div>
+                                <div class="news__item-day">вторник</div>
+                                <div class="news__item-time">18:00</div>
+                            </div>                            
+                            <div class="news__item-wrapper">
+                                <div class="news__item-cover">
+                                    <img src="img/frontcover/terch_b.jpg" alt="" class="news__item-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__item-content">
+                            <div class="news__item-title">Новая книга "Территория чувств" Елены Рониной уже в продаже</div>
+                            <div class="news__item-text">18 лет назад Алексей потерял любимую жену и уехал с маленькими дочками подальше от места, где все они пережили страшную трагедию, — в Германию. Теперь он возвращается на родину, чтобы увидеться с сестрой и найти в полузабытой им Москве что-то очень важное. Вкус к жизни? Ощущение, что ничего еще не кончилось? <a href="#" class="link">Читать дальше...</a> </div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-preview">
+                            <div class="news__item-datetime">
+                                <div class="news__item-date">2022-07-20</div>
+                                <div class="news__item-day">вторник</div>
+                                <div class="news__item-time">18:00</div>
+                            </div>                            
+                            <div class="news__item-wrapper">
+                                <div class="news__item-cover">
+                                    <img src="img/frontcover/terch_b.jpg" alt="" class="news__item-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__item-content">
+                            <div class="news__item-title">Новая книга "Территория чувств" Елены Рониной уже в продаже</div>
+                            <div class="news__item-text">18 лет назад Алексей потерял любимую жену и уехал с маленькими дочками подальше от места, где все они пережили страшную трагедию, — в Германию. Теперь он возвращается на родину, чтобы увидеться с сестрой и найти в полузабытой им Москве что-то очень важное. Вкус к жизни? Ощущение, что ничего еще не кончилось? <a href="#" class="link">Читать дальше...</a> </div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-preview">
+                            <div class="news__item-datetime">
+                                <div class="news__item-date">2022-07-20</div>
+                                <div class="news__item-day">вторник</div>
+                                <div class="news__item-time">18:00</div>
+                            </div>                            
+                            <div class="news__item-wrapper">
+                                <div class="news__item-cover">
+                                    <img src="img/frontcover/terch_b.jpg" alt="" class="news__item-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__item-content">
+                            <div class="news__item-title">Новая книга "Территория чувств" Елены Рониной уже в продаже</div>
+                            <div class="news__item-text">18 лет назад Алексей потерял любимую жену и уехал с маленькими дочками подальше от места, где все они пережили страшную трагедию, — в Германию. Теперь он возвращается на родину, чтобы увидеться с сестрой и найти в полузабытой им Москве что-то очень важное. Вкус к жизни? Ощущение, что ничего еще не кончилось? <a href="#" class="link">Читать дальше...</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="books__go books__item-btn" href="#">
+                    <span class="books__go-text">все новости &#8594</span>
+                </a>
+            </div>
+       </section>
+       <section class="books" id="books">
+        <div class="container">
+            <div class="books__grid">
+                <div class="books__title">
+                    <h1 class="h1">Книги</h1>
+                    <div class="h1__decor"></div>
+                    <p class="books__title-subtitle">
+                        Лучшие произведения от автора: «Портрет в сиреневых тонах», «В Европу своим ходом», «Три женщины», «Роковой узел» и другие.
+                        <a href="#" class="link">Открыть полный список книг...</a>
+                    </p>
+                    <p class="books__title-info">Дорогие друзья!<br>
+                        Рады сообщить, что теперь Вы можете выгодно приобрести мои книги на этом сайте.</p>
+                </div>
+                <div class="books__item">
+                    <a href="#" class="books__item-wrapper">
+                        <div class="books__item-cover">
+                            <img src="img/frontcover/glass_child.jpg" alt="glass_child" class="books__item-img">
+                        </div>
+                    </a>
+                    <a class="books__item-title link">Стеклянные дети</a>
+                    <p class="books__item-text">Кирилл Кольцов – врач, увлеченный новаторским делом: уже много лет он занимается ЭКО, делая людей счастливыми.</p>
+                    <div class="books__item-price">350 p</div>
+                    <button type="button" class="books__item-btn tocard">в корзину</button>
+                </div>
+                <div class="books__item">
+                    <a href="#" class="books__item-wrapper">
+                        <div class="books__item-cover">
+                            <img src="img/frontcover/tum_b.jpg" alt="cover" class="books__item-img">
+                        </div>
+                    </a>
+                    <a class="books__item-title link">Туман над Фудзи</a>
+                    <p class="books__item-text">Побывать в Японии — мечта многих. В одной поездке судьбу соединила очень разных путешественников. У каждого своя цель.</p>
+                    <div class="books__item-price">350 p</div>
+                    <button type="button" class="books__item-btn tocard">в корзину</button>
+                </div>
+                <div class="books__item">
+                    <a href="#" class="books__item-wrapper">
+                        <div class="books__item-cover">
+                            <img src="img/frontcover/terch_b.jpg" alt="cover" class="books__item-img">
+                        </div>
+                    </a>
+                    <a class="books__item-title link">Территория чувств</a>
+                    <p class="books__item-text">18 лет назад Алексей потерял любимую жену и уехал с маленькими дочками подальше от места, где все они пережили страшную трагедию, — в Германию. </p>
+                    <div class="books__item-price">350 p</div>
+                    <button type="button" class="books__item-btn tocard">в корзину</button>
+                </div>
+                <div class="books__item">
+                    <a href="#" class="books__item-wrapper">
+                        <div class="books__item-cover">
+                            <img src="img/frontcover/4.jpg" alt="cover" class="books__item-img">
+                        </div>
+                    </a>
+                    <a class="books__item-title link">Три женщины</a>
+                    <p class="books__item-text">Известный московский писатель, автор шести книг Елена Ронина представляет добротную семейную сагу, разворачивающуюся на фоне истории страны.</p>
+                    <div class="books__item-price">350 p</div>
+                    <button type="button" class="books__item-btn tocard">в корзину</button>
+                </div>
+                <div class="books__item">
+                    <a href="#" class="books__item-wrapper">
+                        <div class="books__item-cover">
+                            <img src="img/frontcover/terch_b.jpg" alt="cover" class="books__item-img">
+                        </div>
+                    </a>
+                    <a class="books__item-title link">ТЕРРИТОРИЯ ЧУВСТВ</a>
+                    <p class="books__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <div class="books__item-price">350 p</div>
+                    <button type="button" class="books__item-btn tocard">в корзину</button>
+                </div>
+                <div class="books__item books__hide">
+                    <a href="#" class="books__item-wrapper">
+                        <div class="books__item-cover">
+                            <img src="img/frontcover/terch_b.jpg" alt="cover" class="books__item-img">
+                        </div>
+                    </a>
+                    <a class="books__item-title link">ТЕРРИТОРИЯ ЧУВСТВ</a>
+                    <p class="books__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <div class="books__item-price">350 p</div>
+                    <button type="button" class="books__item-btn tocard">в корзину</button>
+                </div>
+                <div class="books__item books__hide">
+                    <a href="#" class="books__item-wrapper">
+                        <div class="books__item-cover">
+                            <img src="img/frontcover/terch_b.jpg" alt="cover" class="books__item-img">
+                        </div>
+                    </a>
+                    <a class="books__item-title link">ТЕРРИТОРИЯ ЧУВСТВ</a>
+                    <p class="books__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <div class="books__item-price">350 p</div>
+                    <button type="button" class="books__item-btn tocard">в корзину</button>
+                </div>
+            </div>
+            <a class="books__go books__item-btn" href="#">
+                <!-- <img src="img/loading.svg" alt="" class="books__go-img"> -->
+                <span class="books__go-text">все книги &#8594</span>
+            </a>
+        </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews__title">
+                    <h1 class="h1">Рецензии</h1>
+                    <div class="h1__decor"></div>
+                </div>
+                <div class="reviews__grid">
+                    <div class="reviews__item">
+                        <div class="reviews__item-preview">
+                            <div class="reviews__item-date">2022-00-00</div>
+                            <div class="reviews__item-wrapper">
+                                <div class="reviews__item-cover">
+                                    <img src="img/othercover/reviews1.jpg" alt="reviews1" class="reviews__item-img">
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="reviews__item-content">
+                            <a href="#" class="reviews__item-title link">Лучшие книги 2021 года. Топ&nbsp;5</a>
+                            <p class="reviews__item-text">И ещё, я немножко писатель, поэтому для меня важен слог, стиль, композиция. Новизна или структура. Отсюда и выбор книг.</p>
+                            <a href="#" class="reviews__item-read link">Читать дальше...</a>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-preview">
+                            <div class="reviews__item-date">2022-00-00</div>
+                            <div class="reviews__item-wrapper">
+                                <div class="reviews__item-cover">
+                                    <img src="img/othercover/reviews1.jpg" alt="reviews1" class="reviews__item-img">
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="reviews__item-content">
+                            <a href="#" class="reviews__item-title link">Лучшие книги 2021 года. Топ 5</a>
+                            <p class="reviews__item-text">И ещё, я немножко писатель, поэтому для меня важен слог, стиль, композиция. Новизна или структура. Отсюда и выбор книг.</p>
+                            <a href="#" class="reviews__item-read link">Читать дальше...</a>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-preview">
+                            <div class="reviews__item-date">2022-00-00</div>
+                            <div class="reviews__item-wrapper">
+                                <div class="reviews__item-cover">
+                                    <img src="img/othercover/reviews1.jpg" alt="reviews1" class="reviews__item-img">
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="reviews__item-content">
+                            <a href="#" class="reviews__item-title link">Лучшие книги 2021 года. Топ 5</a>
+                            <p class="reviews__item-text">И ещё, я немножко писатель, поэтому для меня важен слог, стиль, композиция. Новизна или структура. Отсюда и выбор книг.</p>
+                            <a href="#" class="reviews__item-read link">Читать дальше...</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="books__go books__item-btn" href="#">
+                    <span class="books__go-text">все рецензии &#8594</span>
+                </a>
+            </div>
+        </section>
+        <section class="interview" id="interview">
+            <div class="container">
+                <div class="interview__title">
+                    <h1 class="h1">Интервью</h1>
+                    <div class="h1__decor"></div>
+                </div>
+                <!-- <div class="interview__grid">
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="http://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="http://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="http://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="interview__item">
+                        <iframe class="interview__item-iframe" width="560" height="315" src="http://www.youtube.com/embed/mXErINLZ_R8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div> -->
+                <a class="books__go books__item-btn" href="#">
+                    <!-- <img src="img/loading.svg" alt="" class="books__go-img"> -->
+                    <span class="books__go-text">все интервью &#8594</span>
+                </a>
+            </div>
+        </section>
+        <section class="souvenirs" id="souvenirs">
+            <div class="container">
+                <div class="souvenirs__title">
+                    <h1 class="h1">Суверниры</h1>
+                    <div class="h1__decor"></div>
+                </div>
+                <div class="souvenirs__grid">
+                    <div class="souvenirs__item">
+                        <div class="souvenirs__item-wrapper">
+                            <div class="souvenirs__item-hover">
+                                <img class="souvenirs__item-magnify" src="img/magnifying-glass-zoom.svg" alt="magnifying-glass-zoom">
+                            </div>
+                            <div class="souvenirs__item-cover">
+                                <img src="img/bag_preview.png" alt="bag" class="souvenirs__item-img">
+                            </div>
+                        </div>
+                        <div class="souvenirs__item-title">Городская сумка</div>
+                        <div class="souvenirs__item-text">
+                            <p>Удобная городская сумка из холста с логотипом автора.</p>
+                            <p>Размеры сумки: ширина&nbsp;41&nbsp;см, высота&nbsp;44&nbsp;см, высота&nbsp;ручек&nbsp;33&nbsp;см</p>
+                        </div>
+                        <div class="souvenirs__item-price"></div>
+                        <div class="souvenirs__item-footer">
+                            <div class="counter">
+                                <button type="button" class="counter__btn counter__minus counter__minus-0">
+                                    <img src="img/minus.svg" alt="minus" class="counter__btn-img">
+                                </button>
+                                <input type="text" value="0" class="counter__input">
+                                <button type="button" class="counter__btn counter__plus">
+                                    <img src="img/plus.svg" alt="plus" class="counter__btn-img">
+                                </button>
+                            </div>
+                            <button class="to__card books__item-btn tocard">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="meetings" id="meetings">
+            <div class="container">
+                <div class="meetings__title">
+                    <h1 class="h1">Московские посиделки</h1>
+                    <div class="h1__decor"></div>
+                </div>
+            </div>
+        </section> -->
+        <div class="container">
+            <div class="toTop">
+                <img src="img/toTop.svg" alt="toTop">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        </div>
+        <div class="footer__grid">
+            <div class="footer__photo">
+                <div class="footer__photo-wrapper">
+                    <div class="footer__photo-cover">
+                        <img src="img/screen3.png" alt="screen3" class="footer__photo-img"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content-top">
+                    <div class="footer__content-title">Контакты</div>
+                    <div class="footer__content-subtitle">Елена Николаевна Ронина</div>
+                    <a href="mailto:hello@yandex.ru" class="link footer__content-mail">hello@yandex.ru</a>
+                </div>
+                <div class="footer__decor"></div>
+                <div class="footer__content-bottom">
+                    <div class="footer__content-connect">оставайтесь на связи</div>
+                    <ul class="main__social footer__social">
+                        <li class="main__social-li footer__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/inst_footer.svg" alt="inst" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                        <li class="main__social-li footer__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/JJ_footer.svg" alt="JJ" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                        <li class="main__social-li footer__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/youtube_footer.svg" alt="youtube" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                        <li class="main__social-li footer__social-li">
+                            <a href="" class="main__social-link">
+                                <img src="img/mail_footer.svg" alt="mail" class="svg_animate main__social-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__toTop">
+                <img src="img/toTop_footer.svg" alt="toTop">
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/jquery.js?_v=20221118141844" type="module"></script>
+    <script src="js/app.js?_v=20221118141844" type="module"></script>
+</body>
+</html>
