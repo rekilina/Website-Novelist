@@ -21,7 +21,6 @@ var mainList = $('.header__nav-mainlist');
 
 export function dropdownOther() {
     $('#otherlist').click(function() {
-        // let ChildrenCount = otherlist[0].childElementCount;
         let ChildrenCount = otherList.children().length;
         var r = $(':root');
         let lineHeight = parseFloat(r.css("--otherlist-lineheight"));
@@ -48,6 +47,15 @@ function fromOthertoMain(link) {
         let targetLi = link.parentElement;
         $(targetLi).insertBefore($(".header__nav-li-other"));
     }
+}
+
+export function scrollHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    document.querySelector(href).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 }
 
 export async function moveLiHeader() {
@@ -112,3 +120,65 @@ export function topFunction() {
     behavior: 'smooth'
   }); // For Safari
 } 
+
+export function embedDay(selectDay, selectDate) {
+    for (let dateStr of $(selectDate)) {
+        let date = new Date(dateStr.textContent);
+        let dayNumber = date.getDay();
+        let week = {1: "понедельник", 2: "вторник",
+        3: "среда", 4: "четверг", 5: "пятница", 6: "суббота",
+        7: "воскресенье"};
+        let dayElem = $(dateStr).siblings(selectDay);
+        dayElem[0].textContent = week[dayNumber];
+        console.log(dayElem);
+    }
+}
+//counter__input
+export function counterValidation(e) {
+    if (e.key === "Enter") {
+        e.preventDefault(); 
+        if(Number(this.value) < 0) {
+          this.value = '0';
+        }
+        let minus = this.previousElementSibling;
+        if(Number(this.value) <= 0) {
+          if(!minus.classList.contains("counter__minus-0")) {
+          minus.classList.add("counter__minus-0");
+        }
+        } else {
+          if(minus.classList.contains("counter__minus-0")) {
+            minus.classList.remove("counter__minus-0");
+          }
+        } 
+      }
+}
+
+export function counter(e) {
+    let pressed_btn = e.target;
+    if(e.target.tagName == "IMG") {
+        pressed_btn = e.target.parentElement;
+    }
+    if(e.target.tagName == "BUTTON") {
+        pressed_btn = e.target;
+    }
+    let target_input = pressed_btn.parentElement.querySelector("input");
+    if(pressed_btn.classList.contains("counter__plus")) {
+        target_input.value = Number(target_input.value) + 1;
+        let minus = pressed_btn.previousElementSibling.previousElementSibling;
+        if (target_input.value > 0) {
+          if(minus.classList.contains("counter__minus-0")) {
+            minus.classList.remove("counter__minus-0");
+          }
+        } 
+      }
+      if(pressed_btn.classList.contains("counter__minus")) {
+        if (target_input.value > 0) {
+          target_input.value -= 1;
+        }
+        if (target_input.value <= 1) {
+          if(!pressed_btn.classList.contains("counter__minus-0")) {
+            pressed_btn.classList.add("counter__minus-0");
+          }
+        }
+      }
+}

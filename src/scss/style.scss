@@ -9,6 +9,7 @@ $bluegrey: #9db7be;
 $oldstandart: 'Old Standard TT', serif;
 $opensans: 'Open Sans', sans-serif;
 $bogart: 'Bogart', serif;
+$cormorant: 'Cormorant', serif;
 $time-link: .5s;
 $d1200: 1200px;
 $d1000: 1000px;
@@ -158,6 +159,8 @@ body.stop-scrolling {
             transition: height $time-link ease;
             line-height: var(--otherlist-lineheight);
             background-color: rgba($milk, .8);
+            padding-left: 0;
+            padding-right: 15px;
             &.visible {
                 height: var(--otherlist-height);
             }
@@ -580,7 +583,9 @@ body.stop-scrolling {
             }
         }
         &-text {
-            font-family: $oldstandart;
+            // font-family: $oldstandart;
+            font-family: $cormorant;
+            font-weight: 400;
             font-size: 18px;
             text-align: justify;
             line-height: 1.3;
@@ -644,6 +649,10 @@ body.stop-scrolling {
         display: flex;
         flex-direction: column;
         align-items: center;
+        &-price {
+            color: $lightbrown;
+            font-size: 14px;
+        }
         &-wrapper{
             width: 25%;
             transform: scale(1);
@@ -687,7 +696,7 @@ body.stop-scrolling {
             margin: 20px auto 0;
         }
         &-text {
-            font-family: $bogart;
+            font-family: $cormorant;
             font-weight: 300;
             font-size: 14px;
             text-align: center;
@@ -910,6 +919,13 @@ body.stop-scrolling {
                     max-width: 50px;
                     font-size: 14px;
                     text-align: center;
+                    font-family: $oldstandart;
+                    background-color: transparent;
+                    outline: none;
+                    border: 1px solid $darkbroun;
+                    border-radius: 10px;
+                    color: $black;
+
                 }
                 &__btn {
                     width: 25px;
@@ -919,11 +935,30 @@ body.stop-scrolling {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    opacity: .7;
                     &-img {
                         width: 50%;
                     }
                     &:hover {
                         cursor: pointer;
+                    }
+                }
+                &__minus {
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 1;
+                    }
+                }
+                &__minus-0 {
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .7; 
+                    }
+                }
+                &__plus {
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 1;
                     }
                 }
             }
@@ -1049,6 +1084,7 @@ body.stop-scrolling {
         position: relative;
         display: flex;
         justify-content: center;
+        margin-top: 80px;
     }
     &__toTop {
         border: 2px solid $milk;

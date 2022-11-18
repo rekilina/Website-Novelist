@@ -1,14 +1,35 @@
 @font-face {
 	font-family: Bogart;
 	font-display: swap;
+	src: url("../fonts/Bogart-Regular-trial.woff2") format("woff2"), url(".../fonts/Bogart-Regular-trial");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Bogart;
+	font-display: swap;
 	src: url("../fonts/Bogart-Thin.woff2") format("woff2"), url(".../fonts/Bogart-Thin");
 	font-style: normal;
 	font-weight: 300;
 }
 @font-face {
-	font-family: Bogart;
+	font-family: Cormorant;
 	font-display: swap;
-	src: url("../fonts/Bogart-Regular-trial.woff2") format("woff2"), url(".../fonts/Bogart-Regular-trial");
+	src: url("../fonts/Cormorant-Regular.woff2") format("woff2"), url(".../fonts/Cormorant-Regular");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Cormorant;
+	font-display: swap;
+	src: url("../fonts/Cormorant-Light.woff2") format("woff2"), url(".../fonts/Cormorant-Light");
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: OldStandardTT;
+	font-display: swap;
+	src: url("../fonts/OldStandardTT-Regular.woff2") format("woff2"), url(".../fonts/OldStandardTT-Regular");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -17,10 +38,5 @@
 	font-display: swap;
 	src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url(".../fonts/OpenSans-Light");
 	font-style: normal;
-}
-@font-face {
-	font-family: OldStandardTT;
-	font-display: swap;
-	src: url("../fonts/OldStandardTT-Regular.woff2") format("woff2"), url(".../fonts/OldStandardTT-Regular");
-	font-style: normal;
+	font-weight: 300;
 }
