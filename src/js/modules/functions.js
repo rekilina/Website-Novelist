@@ -96,3 +96,19 @@ export async function moveLiHeader() {
         }
     }
 }
+
+export function scrollFunction(btn) {
+  if (document.body.scrollTop > window.innerHeight/2 || document.documentElement.scrollTop > window.innerHeight/2) {
+    btn.style.visibility = "visible";
+  } else {
+    btn.style.visibility = "hidden";
+  }
+}
+
+export function topFunction() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  }); // For Safari
+} 
